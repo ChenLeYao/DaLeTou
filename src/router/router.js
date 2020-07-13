@@ -17,7 +17,7 @@ export class RouteIndex extends Component {
     render(){
         return(
                 <Switch>
-                    <Route path="/"  exact component={BackWater28}/>
+                    <Route path="/"  exact component={Index}/>
                     <Route path="/index"  component={Index} />
                     <Route path="/hall" exact component={Hall} />
                     <Route path="/user" exact component={User} />

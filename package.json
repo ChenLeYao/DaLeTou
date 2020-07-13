@@ -9,7 +9,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "webpack-dev-server   --history-api-fallback  --config webpack.config.js",
-    "build" : "webpack --config webpack.pro.js"
+    "app": "node app.js",
+    "build": "webpack --config webpack.pro.js"
   },
   "sideEffects": [
     "*.css",
@@ -33,7 +34,9 @@
     "babel": "^6.23.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-import": "^1.13.0",
+    "body-parser": "^1.19.0",
     "clean-webpack-plugin": "^3.0.0",
+    "express": "^4.17.1",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
     "node-sass": "^4.14.1",
