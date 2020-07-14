@@ -1,4 +1,5 @@
-
+import wx from '../../image/icon/wx.png';
+import zfb from '../../image/icon/zfb.png';
 class Recharge extends Component{
     render(){
         return(
@@ -24,8 +25,8 @@ class Recharge extends Component{
                     </div>
                     <p className="re-me">充值方式</p>
                     <ul className="re-method">
-                        <li className="wx"><img src="/src/image/icon/wx.png"/>微信<a className="active"></a></li>
-                        <li className="zfb"><img src="/src/image/icon/zfb.png"/>支付宝<a></a></li>
+                        <li className="wx"><img src={ wx }/>微信<a className="active"></a></li>
+                        <li className="zfb"><img src={ zfb }/>支付宝<a></a></li>
                     </ul>
                 </div>
                 <div className="re-con">确认充值</div>

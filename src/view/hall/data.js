@@ -24,104 +24,104 @@ let data = [{
         title: '北京PK10',
         path: brand_1 ,
         number : 624730918 ,
-        start_time : '2020/7/13 11:10:10',
-        end_time :  '2020/7/14 11:10:10',
+        start_time : '2020/7/16 11:19:00',
+        end_time : '2020/7/17 10:10:41',
         period : 2041
     },
         {
             title: '幸运飞艇',
             path: brand_1 ,
             number : 527230619 ,
-            start_time : '2020/7/13 11:10:10',
-            end_time :  '2020/7/14 11:10:10',
+            start_time : '2020/7/16 11:19:00',
+            end_time : '2020/7/17 10:10:41',
             period : 2041
         },
         {
             title: '北京赛车',
             path: brand_2 ,
             number : 164579012 ,
-            start_time : '2020/7/13 11:10:10',
-            end_time :  '2020/7/14 11:10:10',
+            start_time : '2020/7/16 11:19:00',
+            end_time : '2020/7/17 10:10:41',
             period : 2041
         },
         {
             title: '广东快乐10',
             path: brand_3 ,
             number : 897233820 ,
-            start_time : '2020/7/13 11:10:10',
-            end_time :  '2020/7/14 11:10:10',
+            start_time : '2020/7/16 11:19:00',
+            end_time : '2020/7/17 10:10:41',
             period : 2041
         },
         {
             title: '澳洲幸运5',
             path: brand_4 ,
             number : 124231719 ,
-            start_time : '2020/7/13 11:10:10',
-            end_time :  '2020/7/14 11:10:10',
+            start_time : '2020/7/16 11:19:00',
+            end_time : '2020/7/17 10:10:41',
             period : 2041
         },
         {
             title: '新疆时时彩',
             path: brand_5 ,
             number : 928039153 ,
-            start_time : '2020/7/13 11:10:10',
-            end_time :  '2020/7/14 11:10:10',
+            start_time : '2020/7/16 11:19:00',
+            end_time : '2020/7/17 10:10:41',
             period : 2041
         },
         {
             title: '极速赛车',
             path: brand_6 ,
             number : 982345781 ,
-            start_time : '2020/7/13 11:10:10',
-            end_time :  '2020/7/14 11:10:10',
+            start_time : '2020/7/16 11:19:00',
+            end_time : '2020/7/17 10:10:41',
             period : 2041
         },
         {
             title: '北京28',
             path: brand_7 ,
             number : 124230012 ,
-            start_time : '2020/7/13 11:10:10',
-            end_time :  '2020/7/14 11:10:10',
+            start_time : '2020/7/16 11:19:00',
+            end_time : '2020/7/17 10:10:41',
             period : 2041
         },
         {
             title: '重庆时时乐',
             path: brand_8 ,
             number : 124230012 ,
-            start_time : '2020/7/13 11:10:10',
-            end_time :  '2020/7/14 11:10:10',
+            start_time : '2020/7/16 11:19:00',
+            end_time : '2020/7/17 10:10:41',
             period : 2041
         },
         {
             title: '悉尼三分彩',
             path: brand_9 ,
             number : 124230012 ,
-            start_time : '2020/7/13 11:10:10',
-            end_time :  '2020/7/14 11:10:10',
+            start_time : '2020/7/16 11:19:00',
+            end_time : '2020/7/17 10:10:41',
             period : 2041
         },
         {
             title: '加拿大28',
             path: brand_11 ,
             number : 124230012 ,
-            start_time : '2020/7/13 11:10:10',
-            end_time :  '2020/7/14 11:10:10',
+            start_time : '2020/7/16 11:19:00',
+            end_time : '2020/7/17 10:10:41',
             period : 2041
         },
         {
             title: '飞艇牛牛',
             path: brand_1 ,
             number : 124230012 ,
-            start_time : '2020/7/13 11:10:10',
-            end_time :  '2020/7/14 11:10:10',
+            start_time : '2020/7/16 11:19:00',
+            end_time : '2020/7/17 10:10:41',
             period : 2041
         },
         {
             title: '北京pk10',
             path: brand_18 ,
             number : 124230012 ,
-            start_time : '2020/7/13 11:10:10',
-            end_time :  '2020/7/14 11:10:10',
+            start_time : '2020/7/16 11:19:00',
+            end_time : '2020/7/17 10:10:41',
             period : 2041
         }
     ]
@@ -133,16 +133,16 @@ let data = [{
             title: '北京28',
             path: brand_8 ,
             number : 124230012 ,
-            start_time : '2020/7/13 11:10:10',
-            end_time :  '2020/7/14 11:10:10',
+            start_time : '2020/7/16 11:19:00',
+            end_time : '2020/7/17 10:10:41',
             period : 2041
         },
             {
                 title: '加拿大28',
                 path: brand_9,
                 number : 124230012 ,
-                start_time : '2020/7/13 11:10:10',
-                end_time :  '2020/7/14 11:10:10',
+                start_time : '2020/7/16 11:19:00',
+                end_time : '2020/7/17 10:10:41',
                 period : 2041
             },
         ]
@@ -153,24 +153,24 @@ let data = [{
             title: '北京PK10',
             path: brand_1,
             number : 124230012 ,
-            start_time : '2020/7/13 11:10:10',
-            end_time :  '2020/7/14 11:10:10',
+            start_time : '2020/7/16 11:19:00',
+            end_time : '2020/7/17 10:10:41',
             period : 2041
             },
             {
                 title: '幸运飞艇',
                 path: brand_1 ,
                 number : 124230012,
-                start_time : '2020/7/13 11:10:10',
-                end_time :  '2020/7/14 11:10:10',
+                start_time : '2020/7/16 11:19:00',
+                end_time : '2020/7/17 10:10:41',
                 period : 2041
             },
             {
                 title: '极速赛车',
                 path: brand_6 ,
                 number : 124230012,
-                start_time : '2020/7/13 11:10:10',
-                end_time :  '2020/7/14 11:10:10',
+                start_time : '2020/7/16 11:19:00',
+                end_time : '2020/7/17 10:10:41',
                 period : 2041
             }
         ]
@@ -183,40 +183,40 @@ let data = [{
                 title: '澳洲幸运5',
                 path: brand_4 ,
                 number : 124230012,
-                start_time : '2020/7/13 11:10:10',
-                end_time :  '2020/7/14 11:10:10',
+                start_time : '2020/7/16 11:19:00',
+                end_time : '2020/7/17 10:10:41',
                 period : 2041
             },
             {
                 title: '新疆时时彩',
                 path: brand_5 ,
                 number : 124230012,
-                start_time : '2020/7/13 11:10:10',
-                end_time :  '2020/7/14 11:10:10',
+                start_time : '2020/7/16 11:19:00',
+                end_time : '2020/7/17 10:10:41',
                 period : 2041
             },
             {
                 title: '重庆时时乐',
                 path: brand_8 ,
                 number : 124230012,
-                start_time : '2020/7/13 11:10:10',
-                end_time :  '2020/7/14 11:10:10',
+                start_time : '2020/7/16 11:19:00',
+                end_time : '2020/7/17 10:10:41',
                 period : 2041
             },
             {
                 title: '悉尼三分彩',
                 path: brand_9 ,
                 number : 124230012,
-                start_time : '2020/7/13 11:10:10',
-                end_time :  '2020/7/14 11:10:10',
+                start_time : '2020/7/16 11:19:00',
+                end_time : '2020/7/17 10:10:41',
                 period : 2041
             },
             {
                 title: '腾讯分分彩',
                 path: brand_18 ,
                 number : 124230012,
-                start_time : '2020/7/13 11:10:10',
-                end_time :  '2020/7/14 11:10:10',
+                start_time : '2020/7/16 11:19:00',
+                end_time : '2020/7/17 10:10:41',
                 period : 2041
             }
         ]
@@ -229,16 +229,16 @@ let data = [{
                 title: '北京PK10',
                 path: brand_4 ,
                 number : 624730918,
-                start_time : '2020/7/13 11:10:10',
-                end_time :  '2020/7/14 11:10:10',
+                start_time : '2020/7/16 11:19:00',
+                end_time : '2020/7/17 10:10:41',
                 period : 2041
             },
             {
                 title: '飞艇牛牛',
                 path: brand_1 ,
                 number : 124230012,
-                start_time : '2020/7/13 11:10:10',
-                end_time :  '2020/7/14 11:10:10',
+                start_time : '2020/7/16 11:19:00',
+                end_time : '2020/7/17 10:10:41',
                 period : 2041
             }
         ]
@@ -251,8 +251,8 @@ let data = [{
                 title: '广东快乐十分彩',
                 path: brand_3 ,
                 number : 124230012,
-                start_time : '2020/7/13 11:10:10',
-                end_time :  '2020/7/14 11:10:10',
+                start_time : '2020/7/16 11:19:00',
+                end_time : '2020/7/17 10:10:41',
                 period : 2041
             }
         ]

@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 
 //设置使用哪个模板引擎
 //app.set('view engine' , 'ejs' );
-app.set('port' , process.env.PORT || 3333 );
+app.set('port' , process.env.PORT || 3200 );
 app.use( bodyParser.json());
 app.use( bodyParser.urlencoded( {  limit : '50mb',extended : true }));
 //app.use( favicon(__dirname + '/static/favicon.png'));
@@ -32,6 +32,8 @@ app.all('*', function ( req ,res , next ) {
 var server = app.listen( app.get('port') , function () {
     var host = server.address().address;
     var port = server.address().port;
+    console.log('已建立连接');
+    console.log('port:' +  port );
 });
 
 app.use(function ( req ,res , next ) {
