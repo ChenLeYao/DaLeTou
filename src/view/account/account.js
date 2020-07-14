@@ -4,7 +4,7 @@ class Account extends Component{
         return(
             <div className="dish_body">
                 <div className="dish_header red">
-                    <a className="back" ></a>
+                    <a className="back" onClick={ ()=>{ this.props.history.goBack()  } } ></a>
                     资产明细
                 </div>
                 <div className="box-bg">

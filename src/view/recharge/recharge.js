@@ -1,12 +1,13 @@
 import wx from '../../image/icon/wx.png';
 import zfb from '../../image/icon/zfb.png';
+
 class Recharge extends Component{
     render(){
         return(
             <div>
                 <div className="dish_body">
                     <div className="dish_header red">
-                        <a className="back" ></a>充值中心
+                        <a className="back" onClick={ ()=>{ this.props.history.goBack()  } } ></a>充值中心
                     </div>
                     <div className="re-name">
                         <p>当前账号:<span>小明</span></p>

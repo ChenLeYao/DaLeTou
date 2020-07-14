@@ -37,7 +37,7 @@ class BackWater extends Component{
         return(
             <div className="dish_body">
                 <div className="dish_header red">
-                    <a className="back" ></a>
+                    <a className="back" onClick={ ()=>{ this.props.history.goBack()  } } ></a>
                     彩种回水
                 </div>
                 <ul className="state-date">

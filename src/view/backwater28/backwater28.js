@@ -30,7 +30,7 @@ class BackWater28 extends Component{
         return(
             <div className="dish_body">
                 <div className="dish_header red">
-                    <a className="back" ></a>
+                    <a className="back" onClick={ ()=>{ this.props.history.goBack()  } } ></a>
                     28彩种回水
                 </div>
                 <div className="Oddswrap">

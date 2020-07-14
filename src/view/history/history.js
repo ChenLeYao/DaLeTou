@@ -42,7 +42,7 @@ class History extends Component{
             <div>
                 <div className="dish_body">
                     <div className="dish_header red">
-                        <a className="back" ></a>
+                        <a className="back"  onClick={ ()=>{ this.props.history.goBack()  } }></a>
                         投注记录<span className="filter" onClick={ this.changeActive} >筛选</span>
                     </div>
                     <div className="re-name">

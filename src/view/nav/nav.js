@@ -40,17 +40,45 @@ const navDate = [
         icon_on : index_font_6_on
     }
 ];
+// function Nav( props ) {
+//         return (
+//             <div className="dish">
+//                 {   navDate.map( ( item , index ) =>
+//                         <Link key={ index + item.path } className={ props.match.path == item.path ?  'active' :  '' } to={ item.path } >
+//                             <img src={ props.match.path == item.path ? item.icon_on :  item.icon }/>
+//                             <span>{ item.title }</span>
+//                         </Link> )
+//                 }
+//             </div>
+//      )
+// }
+
 function Nav( props ) {
-        return (
-            <div className="dish">
-                {   navDate.map( ( item , index ) =>
-                        <Link key={ index + item.path } className={ props.match.path == item.path ?  'active' :  '' } to={ item.path } >
-                            <img src={ props.match.path == item.path ? item.icon_on :  item.icon }/>
-                            <span>{ item.title }</span>
-                        </Link> )
-                }
-            </div>
-     )
+    return (
+        <div className="dish">
+            <Link to={ navDate[0].path } className={ props.match.path == navDate[0].path ?  'active' :  '' }  >
+                <img src={ props.match.path == navDate[0].path ? navDate[0].icon_on :  navDate[0].icon }/>
+                <span>{ navDate[0].title }</span>
+            </Link>
+            <Link to={ navDate[1].path }  className={ props.match.path == navDate[1].path ?  'active' :  '' } >
+                <img src={ props.match.path == navDate[1].path ? navDate[1].icon_on :  navDate[1].icon }/>
+                <span>{ navDate[1].title }</span>
+            </Link>
+            <Link to={ navDate[2].path }  className={ props.match.path == navDate[2].path ?  'active' :  '' } >
+                <img src={ props.match.path == navDate[2].path ? navDate[2].icon_on :  navDate[2].icon }/>
+                <span>{ navDate[2].title }</span>
+            </Link>
+            <Link to={ navDate[3].path }  className={ props.match.path == navDate[3].path ?  'active' :  '' } >
+                <img src={ props.match.path == navDate[3].path ? navDate[3].icon_on :  navDate[3].icon }/>
+                <span>{ navDate[3].title }</span>
+            </Link>
+            <Link to={ navDate[4].path } className={ props.match.path == navDate[4].path ?  'active' :  '' } >
+                <img src={ props.match.path == navDate[4].path ? navDate[4].icon_on :  navDate[4].icon }/>
+                <span>{ navDate[4].title }</span>
+            </Link>
+
+        </div>
+    )
 }
 
 export default Nav;
