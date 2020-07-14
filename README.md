@@ -16,25 +16,16 @@ react 开发的彩票网站，不是真实数据和接口,也不能购买彩票,
 
 ## <a href="http://139.224.230.131:3200/">项目地址</a>
 
-###己完成功能
-####
-<input checked="checked" type="checkbox"/><label>首页</label>
-####
-<input checked="checked" type="checkbox"/><label>彩票大厅</label>
-####
-<input checked="checked" type="checkbox"/><label>个人中心</label>
-####
-<input checked="checked" type="checkbox"/><label>彩票详情</label>
-####
-<input checked="checked" type="checkbox"/><label>充值</label>
-####
-<input checked="checked" type="checkbox"/><label>----</label>
-####
-<input checked="checked" type="checkbox"/><label>----</label>
-####
-<input checked="checked" type="checkbox"/><label>----</label>
-####
-<input checked="checked" type="checkbox"/><label>----</label>
+### 己完成功能
+#### <input checked="checked" type="checkbox"/><label>首页</label>
+#### <input checked="checked" type="checkbox"/><label>彩票大厅</label>
+#### <input checked="checked" type="checkbox"/><label>个人中心</label>
+#### <input checked="checked" type="checkbox"/><label>彩票详情</label>
+#### <input checked="checked" type="checkbox"/><label>充值</label>
+#### <input checked="checked" type="checkbox"/><label>----</label>
+#### <input checked="checked" type="checkbox"/><label>----</label>
+#### <input checked="checked" type="checkbox"/><label>----</label>
+#### <input checked="checked" type="checkbox"/><label>----</label>
 
 
 
