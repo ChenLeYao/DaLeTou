@@ -2,6 +2,7 @@ import data from './data.js';
 import  { Link } from 'react-router-dom';
 import background from '../../image/icon/user.png';
 import nav from '../../image/icon/nav_1.png';
+import Nav from '../nav/nav.js';
 class User extends Component {
     render(){
         return <div className="user-body dish_body">
@@ -27,6 +28,7 @@ class User extends Component {
                 </ul>
             </div>
             <UserFun/>
+            <Nav match={ this.props.match}/>
         </div>
     }
 }

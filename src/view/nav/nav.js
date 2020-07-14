@@ -39,35 +39,18 @@ const navDate = [
         icon : index_font_6 ,
         icon_on : index_font_6_on
     }
-
-]
-class Nav extends Component {
-    constructor(props){
-       super( props );
-       this.state = {
-           isActive : 0
-       }
-    }
-    changeActive( index ){
-        this.setState({
-            isActive : index
-        })
-    }
-    render(){
+];
+function Nav( props ) {
         return (
             <div className="dish">
-                {
-                    navDate.map( ( item , index ) =>
-                        <Link  onClick={ ()=> this.changeActive( index ) } className={ this.state.isActive == index ?  'active' :  '' } to={ item.path } >
-                            <img src={ this.state.isActive == index ? item.icon_on :  item.icon }/>
+                {   navDate.map( ( item , index ) =>
+                        <Link key={ index + item.path } className={ props.match.path == item.path ?  'active' :  '' } to={ item.path } >
+                            <img src={ props.match.path == item.path ? item.icon_on :  item.icon }/>
                             <span>{ item.title }</span>
-                        </Link>
-                    )
+                        </Link> )
                 }
-
             </div>
-        )
-    }
+     )
 }
 
 export default Nav;

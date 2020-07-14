@@ -1,23 +1,18 @@
 import ReactDom from  "react-dom";
-import { RouteMain  ,  RouteIndex } from './router/router.js';
-import Nav from './view/nav/nav.js';
+import { RouteMain  ,  RouteIndex , Redirect  } from './router/router.js';
 import './css/public.css';
 import './css/swiper.scss';
 import './css/mobileSelect.css';
-
 import { BrowserRouter as Router , Route } from 'react-router-dom';
+import Index from "./view/index";
+
 
 class App extends Component {
     render(){
       return (
           <Router>
-              <Route>
                   <RouteIndex/>
-                  <Nav/>
-              </Route>
-              <Route>
                   <RouteMain/>
-              </Route>
           </Router>
       )
     }

@@ -1,4 +1,4 @@
-import brand_1 from '../../image/icon/brand_1.jpeg';
+import brand_1  from '../../image/icon/brand_1.jpeg';
 import brand_2 from '../../image/icon/brand_2.jpeg';
 import brand_3 from '../../image/icon/brand_3.jpeg';
 import brand_4 from '../../image/icon/brand_4.jpeg';

@@ -2,6 +2,7 @@ import  { Swiper , SwiperSlide  }  from 'swiper/react';
 import { Link } from 'react-router-dom';
 import data from './data.js';
 import { countDown } from '../../js/plugin-all.js';
+import Nav from '../nav/nav.js';
 import banner3 from '../../image/common/banner-3.png';
 import banner4 from '../../image/common/banner-4.png';
 import banner5 from '../../image/common/banner-5.png';
@@ -20,6 +21,7 @@ class Index extends Component {
                 <SwiperTab/>
                 <Server/>
                 <LotteryClass/>
+                <Nav match={ this.props.match}/>
             </div>
         )
     }

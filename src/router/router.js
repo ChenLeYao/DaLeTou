@@ -1,4 +1,4 @@
-import { Route , Switch , Redirect  } from 'react-router-dom';
+import { Route , Switch , Redirect } from 'react-router-dom';
 import React , { Component } from 'react';
 import Hall from '../view/hall/hall.js'
 import Index from '../view/index/index.js'
@@ -13,16 +13,21 @@ import Prefer from '../view/prefer/prefer.js'
 import Recharge from '../view/recharge/recharge.js'
 import ReportForm from '../view/reportform/reportform.js'
 import Discount from '../view/discount/discount.js'
+import Share from '../view/share/share.js'
 export class RouteIndex extends Component {
     render(){
         return(
+            <div>
                 <Switch>
-                    <Route path="/"  exact component={Index}/>
+                    <Route path="/"  exact render={()=><Redirect to='/index'/>}/>
                     <Route path="/index"  component={Index} />
                     <Route path="/hall" exact component={Hall} />
                     <Route path="/user" exact component={User} />
+                    <Route path="/share" exact component={Share} />
                     <Route path="/turntable" exact component={TurnTable}/>
                 </Switch>
+            </div>
+
         )
     }
 }
