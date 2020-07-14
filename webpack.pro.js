@@ -23,8 +23,17 @@ module.exports = {
                 test : /\.css$/,
                 loader : [ 'style-loader' , 'css-loader']
             },
-            {
-                test : /\.(png|jpg|gif)$/ ,
+            // {
+            //     test : /\.(png|jpg|gif|jpeg)$/ ,
+            //     use : [
+            //         {
+            //             loader :  'url-loader',
+            //             options: {  limit: 10000 }
+            //         }
+            //     ]
+            // },
+           {
+                test : /\.(png|jpg|gif|jpeg)$/ ,
                 use : [
                     { loader :  'file-loader' }
                 ]
@@ -46,5 +55,10 @@ module.exports = {
         }),
         new CleanWebpackPlugin(),
         new mainfestPlugin()
-    ]
+    ],
+    optimization : {
+        splitChunks : {
+            chunks :'all'
+        }
+    }
 };

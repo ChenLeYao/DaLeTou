@@ -33,7 +33,6 @@ module.exports = {
         hot : true
     },
     module : {
-
         rules : [
             {
                 test : /.js$/,
@@ -45,11 +44,20 @@ module.exports = {
                 loader : [ 'style-loader' , 'css-loader']
             },
             {
-                test : /\.(png|jpg|gif)$/ ,
+                test : /\.(png|jpg|gif|jpeg)$/ ,
                 use : [
                     { loader :  'file-loader' }
                 ]
             },
+            // {
+            //     test : /\.(png|jpg|gif|jpeg)$/ ,
+            //     use : [
+            //         {
+            //             loader :  'url-loader',
+            //             options: {  limit: 500000 }
+            //         },
+            //     ]
+            // },
             {
                 test : /\.scss$/,
                 use : [
@@ -67,5 +75,10 @@ module.exports = {
         }),
         new CleanWebpackPlugin(),
         new mainfestPlugin()
-    ]
+    ],
+    optimization : {
+        splitChunks : {
+            chunks :'all'
+        }
+    }
 };

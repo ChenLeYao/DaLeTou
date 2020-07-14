@@ -1,28 +1,10 @@
-import hall_1 from '../../image/icon/hall_1.png';
-import hall_2 from '../../image/icon/hall_2.png';
-import hall_3 from '../../image/icon/hall_3.png';
-import hall_4 from '../../image/icon/hall_4.png';
-import hall_5 from '../../image/icon/hall_5.png';
-import hall_6 from '../../image/icon/hall_6.png';
 
-import brand_1 from '../../image/icon/brand_1.jpeg';
-import brand_2 from '../../image/icon/brand_2.jpeg';
-import brand_3 from '../../image/icon/brand_3.jpeg';
-import brand_4 from '../../image/icon/brand_4.jpeg';
-import brand_5 from '../../image/icon/brand_5.jpeg';
-import brand_6 from '../../image/icon/brand_6.jpeg';
-import brand_7 from '../../image/icon/brand_7.jpeg';
-import brand_8 from '../../image/icon/brand_8.jpeg';
-import brand_9 from '../../image/icon/brand_9.jpeg';
-// import brand_10 from '../../image/icon/brand_10.png';
-import brand_11 from '../../image/icon/brand_11.jpeg';
-import brand_18 from '../../image/icon/brand_18.jpeg';
 let data = [{
     name: '全部',
-    path: hall_1 ,
+    path:  '/src/image/icon/hall_1.jpeg',
     content: [{
         title: '北京PK10',
-        path: brand_1 ,
+        path: '/src/image/icon/brand_1.jpeg',
         number : 624730918 ,
         start_time : '2020/7/13 11:10:10',
         end_time :  '2020/7/14 11:10:10',
@@ -30,7 +12,7 @@ let data = [{
     },
         {
             title: '幸运飞艇',
-            path: brand_1 ,
+            path: '/src/image/icon/brand_1.jpeg' ,
             number : 527230619 ,
             start_time : '2020/7/13 11:10:10',
             end_time :  '2020/7/14 11:10:10',
@@ -38,7 +20,7 @@ let data = [{
         },
         {
             title: '北京赛车',
-            path: brand_2 ,
+            path: '/src/image/icon/brand_2.jpeg',
             number : 164579012 ,
             start_time : '2020/7/13 11:10:10',
             end_time :  '2020/7/14 11:10:10',
@@ -46,7 +28,7 @@ let data = [{
         },
         {
             title: '广东快乐10',
-            path: brand_3 ,
+            path: '/src/image/icon/brand_3.jpeg',
             number : 897233820 ,
             start_time : '2020/7/13 11:10:10',
             end_time :  '2020/7/14 11:10:10',
@@ -54,7 +36,7 @@ let data = [{
         },
         {
             title: '澳洲幸运5',
-            path: brand_4 ,
+            path: '/src/image/icon/brand_4.jpeg',
             number : 124231719 ,
             start_time : '2020/7/13 11:10:10',
             end_time :  '2020/7/14 11:10:10',
@@ -62,7 +44,7 @@ let data = [{
         },
         {
             title: '新疆时时彩',
-            path: brand_5 ,
+            path: '/src/image/icon/brand_5.jpeg',
             number : 928039153 ,
             start_time : '2020/7/13 11:10:10',
             end_time :  '2020/7/14 11:10:10',
@@ -70,7 +52,7 @@ let data = [{
         },
         {
             title: '极速赛车',
-            path: brand_6 ,
+            path: '/src/image/icon/brand_6.jpeg',
             number : 982345781 ,
             start_time : '2020/7/13 11:10:10',
             end_time :  '2020/7/14 11:10:10',
@@ -78,7 +60,7 @@ let data = [{
         },
         {
             title: '北京28',
-            path: brand_7 ,
+            path: '/src/image/icon/brand_7.jpeg',
             number : 124230012 ,
             start_time : '2020/7/13 11:10:10',
             end_time :  '2020/7/14 11:10:10',
@@ -86,7 +68,7 @@ let data = [{
         },
         {
             title: '重庆时时乐',
-            path: brand_8 ,
+            path: '/src/image/icon/brand_8.jpeg',
             number : 124230012 ,
             start_time : '2020/7/13 11:10:10',
             end_time :  '2020/7/14 11:10:10',
@@ -94,7 +76,7 @@ let data = [{
         },
         {
             title: '悉尼三分彩',
-            path: brand_9 ,
+            path: '/src/image/icon/brand_9.jpeg',
             number : 124230012 ,
             start_time : '2020/7/13 11:10:10',
             end_time :  '2020/7/14 11:10:10',
@@ -102,7 +84,7 @@ let data = [{
         },
         {
             title: '加拿大28',
-            path: brand_11 ,
+            path: '/src/image/icon/brand_11.jpeg',
             number : 124230012 ,
             start_time : '2020/7/13 11:10:10',
             end_time :  '2020/7/14 11:10:10',
@@ -110,7 +92,7 @@ let data = [{
         },
         {
             title: '飞艇牛牛',
-            path: brand_1 ,
+            path: '/src/image/icon/brand_1.jpeg',
             number : 124230012 ,
             start_time : '2020/7/13 11:10:10',
             end_time :  '2020/7/14 11:10:10',
@@ -118,7 +100,7 @@ let data = [{
         },
         {
             title: '北京pk10',
-            path: brand_18 ,
+            path: '/src/image/icon/brand_18.jpeg',
             number : 124230012 ,
             start_time : '2020/7/13 11:10:10',
             end_time :  '2020/7/14 11:10:10',
@@ -128,10 +110,10 @@ let data = [{
 },
     {
         name: 'PC蛋蛋',
-        path: hall_6 ,
+        path: '/src/image/icon/hall_6.png',
         content: [{
             title: '北京28',
-            path: brand_8 ,
+            path: '/src/image/icon/brand_8.jpeg',
             number : 124230012 ,
             start_time : '2020/7/13 11:10:10',
             end_time :  '2020/7/14 11:10:10',
@@ -139,7 +121,7 @@ let data = [{
         },
             {
                 title: '加拿大28',
-                path: brand_9,
+                path: '/src/image/icon/brand_9.jpeg',
                 number : 124230012 ,
                 start_time : '2020/7/13 11:10:10',
                 end_time :  '2020/7/14 11:10:10',
@@ -148,18 +130,18 @@ let data = [{
         ]
     },
     { name: 'PK10系列',
-        path: hall_2 ,
+        path: '/src/image/icon/hall_2.png',
         content: [{
             title: '北京PK10',
-            path: brand_1,
+            path: '/src/image/icon/brand_1.jpeg',
             number : 124230012 ,
             start_time : '2020/7/13 11:10:10',
             end_time :  '2020/7/14 11:10:10',
             period : 2041
-            },
+        },
             {
                 title: '幸运飞艇',
-                path: brand_1 ,
+                path: '/src/image/icon/brand_1.jpeg',
                 number : 124230012,
                 start_time : '2020/7/13 11:10:10',
                 end_time :  '2020/7/14 11:10:10',
@@ -167,7 +149,7 @@ let data = [{
             },
             {
                 title: '极速赛车',
-                path: brand_6 ,
+                path: '/src/image/icon/brand_6.jpeg',
                 number : 124230012,
                 start_time : '2020/7/13 11:10:10',
                 end_time :  '2020/7/14 11:10:10',
@@ -176,12 +158,12 @@ let data = [{
         ]
     }, {
         name: '时时彩',
-        path: hall_3 ,
+        path: '/src/image/icon/hall_3.png',
         content: [
 
             {
                 title: '澳洲幸运5',
-                path: brand_4 ,
+                path: '/src/image/icon/brand_4.jpeg',
                 number : 124230012,
                 start_time : '2020/7/13 11:10:10',
                 end_time :  '2020/7/14 11:10:10',
@@ -189,7 +171,7 @@ let data = [{
             },
             {
                 title: '新疆时时彩',
-                path: brand_5 ,
+                path: '/src/image/icon/brand_5.jpeg',
                 number : 124230012,
                 start_time : '2020/7/13 11:10:10',
                 end_time :  '2020/7/14 11:10:10',
@@ -197,7 +179,7 @@ let data = [{
             },
             {
                 title: '重庆时时乐',
-                path: brand_8 ,
+                path: '/src/image/icon/brand_8.jpeg',
                 number : 124230012,
                 start_time : '2020/7/13 11:10:10',
                 end_time :  '2020/7/14 11:10:10',
@@ -205,7 +187,7 @@ let data = [{
             },
             {
                 title: '悉尼三分彩',
-                path: brand_9 ,
+                path: '/src/image/icon/brand_9.jpeg',
                 number : 124230012,
                 start_time : '2020/7/13 11:10:10',
                 end_time :  '2020/7/14 11:10:10',
@@ -213,7 +195,7 @@ let data = [{
             },
             {
                 title: '腾讯分分彩',
-                path: brand_18 ,
+                path: '/src/image/icon/brand_18.jpeg',
                 number : 124230012,
                 start_time : '2020/7/13 11:10:10',
                 end_time :  '2020/7/14 11:10:10',
@@ -222,12 +204,12 @@ let data = [{
         ]
     }, {
         name: '牛牛',
-        path: hall_4 ,
+        path: '/src/image/icon/hall_4.png',
         content: [
 
             {
                 title: '北京PK10',
-                path: brand_4 ,
+                path: '/src/image/icon/brand_4.jpeg',
                 number : 624730918,
                 start_time : '2020/7/13 11:10:10',
                 end_time :  '2020/7/14 11:10:10',
@@ -235,7 +217,7 @@ let data = [{
             },
             {
                 title: '飞艇牛牛',
-                path: brand_1 ,
+                path: '/src/image/icon/brand_1.jpeg',
                 number : 124230012,
                 start_time : '2020/7/13 11:10:10',
                 end_time :  '2020/7/14 11:10:10',
@@ -244,12 +226,12 @@ let data = [{
         ]
     }, {
         name: '快乐十分',
-        path: hall_5,
+        path: '/src/image/icon/hall_5.png',
         content: [
 
             {
                 title: '广东快乐十分彩',
-                path: brand_3 ,
+                path: '/src/image/icon/brand_3.jpeg',
                 number : 124230012,
                 start_time : '2020/7/13 11:10:10',
                 end_time :  '2020/7/14 11:10:10',

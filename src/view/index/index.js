@@ -5,6 +5,14 @@ import { countDown } from '../../js/plugin-all.js';
 import banner3 from '../../image/common/banner-3.png';
 import banner4 from '../../image/common/banner-4.png';
 import banner5 from '../../image/common/banner-5.png';
+import nav_1 from '../../image/icon/nav_1.png';
+import nav_2 from '../../image/icon/nav_2.png';
+import nav_3 from '../../image/icon/nav_3.png';
+import nav_4 from '../../image/icon/nav_4.png';
+import nav_5 from '../../image/icon/nav_5.png';
+import heart1 from '../../image/icon/red-heart1.png';
+import heart from '../../image/icon/red-heart.png';
+
 class Index extends Component {
     render(){
         return (
@@ -43,11 +51,11 @@ function SwiperTab() {
 
 function  Server() {
     const serverList = [
-        { name : '充值中心', url :'/src/image/icon/nav_3.png' , path : '/recharge' },
-        { name : '消息公告', url :'/src/image/icon/nav_4.png' , path : '/notice'},
-        { name : '优惠活动', url :'/src/image/icon/nav_2.png' , path : '/discount'},
-        { name : '添加客服', url :'/src/image/icon/nav_5.png' , path : '/addservice'},
-        { name : '联系客服', url :'/src/image/icon/nav_1.png' , path : '/connectservice'}
+        { name : '充值中心', url : nav_1 , path : '/recharge' },
+        { name : '消息公告', url : nav_2 , path : '/notice'},
+        { name : '优惠活动', url : nav_3 , path : '/discount'},
+        { name : '添加客服', url : nav_4 , path : '/addservice'},
+        { name : '联系客服', url : nav_5 , path : '/connectservice'}
     ]
     return (
         <ul className="dish_nav">
@@ -138,7 +146,7 @@ class LotteryClassList extends Component {
                                     <p>
                                         <span className="dash_time"> { item.remain_time }</span>
                                         <span className="dash_right">
-								     <img src={ item.isCollection ? "/src/image/icon/red-heart1.png" : "/src/image/icon/red-heart.png"}/>
+								     <img src={ item.isCollection ? heart1 : heart }/>
 						            </span>
                                     </p>
                                 </div>

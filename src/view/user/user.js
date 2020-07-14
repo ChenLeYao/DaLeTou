@@ -1,6 +1,7 @@
 import data from './data.js';
 import  { Link } from 'react-router-dom';
 import background from '../../image/icon/user.png';
+import nav from '../../image/icon/nav_1.png';
 class User extends Component {
     render(){
         return <div className="user-body dish_body">
@@ -14,7 +15,7 @@ class User extends Component {
                         </a>
                     </div>
                     <span className="server">
-                    <a><img src="/src/image/icon/nav_1.png"/></a></span>
+                    <a><img src={ nav }/></a></span>
                 </div>
                 <ul>
                     <li>

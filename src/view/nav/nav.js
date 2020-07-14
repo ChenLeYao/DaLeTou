@@ -1,33 +1,43 @@
 import { Link  } from 'react-router-dom';
+import index_font_1 from '../../image/icon/index_font_1.png';
+import index_font_1_on from '../../image/icon/index_font_1.png';
+import index_font_2 from '../../image/icon/index_font_2.png';
+import index_font_2_on from '../../image/icon/index_font_2.png';
+import index_font_4 from '../../image/icon/index_font_4.png';
+import index_font_4_on from '../../image/icon/index_font_4.png';
+import index_font_5 from '../../image/icon/index_font_5.png';
+import index_font_5_on from '../../image/icon/index_font_5.png';
+import index_font_6 from '../../image/icon/index_font_6.png';
+import index_font_6_on from '../../image/icon/index_font_6.png';
 const navDate = [
     {
         title : '首页',
         path : '/index' ,
-        icon : '/src/image/icon/index_font_1.png',
-        icon_on : '/src/image/icon/index_font_1_on.png'
+        icon : index_font_1 ,
+        icon_on : index_font_1_on
     } ,
     {
         title : '彩票大厅',
         path : '/hall' ,
-        icon : '/src/image/icon/index_font_2.png',
-        icon_on : '/src/image/icon/index_font_2_on.png'
+        icon : index_font_2 ,
+        icon_on : index_font_2_on
     } ,{
         title : '分享',
         path : '/share' ,
-        icon : '/src/image/icon/index_font_4.png',
-        icon_on : '/src/image/icon/index_font_4_on.png'
+        icon : index_font_4 ,
+        icon_on : index_font_4_on
     }
     ,{
         title : '大转盘',
         path : '/turntable' ,
-        icon : '/src/image/icon/index_font_5.png',
-        icon_on : '/src/image/icon/index_font_5_on.png'
+        icon : index_font_5 ,
+        icon_on : index_font_5_on
     },
     {
         title : '我的',
         path : '/user' ,
-        icon : '/src/image/icon/index_font_6.png',
-        icon_on : '/src/image/icon/index_font_6_on.png'
+        icon : index_font_6 ,
+        icon_on : index_font_6_on
     }
 
 ]
