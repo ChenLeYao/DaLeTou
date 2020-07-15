@@ -1,16 +1,17 @@
 const path  = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const mainfestPlugin = require('webpack-manifest-plugin');
 module.exports = {
     entry  : {
         load : './src/public.js',
         main : './src/index.js'
     },
+
     mode : 'development',
     output : {
         path : path.resolve(__dirname , 'build'),
-        filename : '[name].js'
+        filename : '[name].js',
+        publicPath : "/" ,
     },
     devtool: "cheap-eval-source-map",
     devServer : {
@@ -77,7 +78,6 @@ module.exports = {
             template: './public/index.html',
             title : 'DaLeTou',
         }),
-        new CleanWebpackPlugin(),
         new mainfestPlugin()
     ],
     optimization : {

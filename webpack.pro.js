@@ -10,7 +10,8 @@ module.exports = {
     mode : 'production',
     output : {
         path : path.resolve(__dirname , 'build'),
-        filename : '[name].js'
+        filename : '[name].js' ,
+        publicPath: "/"
     },
     module : {
         rules : [
@@ -39,7 +40,7 @@ module.exports = {
                         loader :  'file-loader',
                         options: {
                             // useRelativePath : true
-                            outputPath : '/image'
+                            outputPath : './image'
 
                         }
                     }
@@ -62,10 +63,6 @@ module.exports = {
         }),
         new CleanWebpackPlugin(),
         new mainfestPlugin()
-    ],
-    optimization : {
-        splitChunks : {
-            chunks :'all'
-        }
-    }
+    ]
+
 };
