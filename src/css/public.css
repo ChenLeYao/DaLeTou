@@ -241,7 +241,7 @@ th {
 	left: 0;
 	z-index: 500;
 	width: 100%;
-	height: .98rem;
+	height: 1.1rem;
 	bottom: 0;
 	text-align: center;
 	display: flex;
@@ -1986,4 +1986,60 @@ th {
 	    margin-left: 0.2rem;
 	    -webkit-text-fill-color: #888;
     opacity: 1;
+}
+.nav_icon {
+	width: 36%;
+	margin: 0 auto;
+	margin-top: 0.1rem;
+	height: 0.53rem;
+	display: block;
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.nav_icon_1 {
+	background-image: url("../image/icon/index_font_1.png");
+}
+.nav_icon_1.active {
+	background-image: url("../image/icon/index_font_1_on.png");
+}
+
+.nav_icon_1 {
+	background-image: url("../image/icon/index_font_1.png");
+}
+.nav_icon_1.active {
+	background-image: url("../image/icon/index_font_1_on.png");
+}
+
+.nav_icon_2 {
+	background-image: url("../image/icon/index_font_2.png");
+}
+.nav_icon_2.active {
+	background-image: url("../image/icon/index_font_2_on.png");
+}
+
+.nav_icon_3 {
+	background-image: url("../image/icon/index_font_3.png");
+}
+.nav_icon_3.active {
+	background-image: url("../image/icon/index_font_3_on.png");
+}
+
+.nav_icon_4 {
+	background-image: url("../image/icon/index_font_4.png");
+}
+.nav_icon_4.active {
+	background-image: url("../image/icon/index_font_4_on.png");
+}
+.nav_icon_5 {
+	background-image: url("../image/icon/index_font_5.png");
+}
+.nav_icon_5.active {
+	background-image: url("../image/icon/index_font_5_on.png");
+}
+.nav_icon_6 {
+	background-image: url("../image/icon/index_font_6.png");
+}
+.nav_icon_6.active {
+	background-image: url("../image/icon/index_font_6_on.png");
 }

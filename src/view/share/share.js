@@ -5,7 +5,6 @@ class Share extends Component{
         return(
             <div>
                 share
-
             </div>
         )
     }

@@ -19,7 +19,6 @@ import  Nav from '../view/nav/nav.js';
 class Home extends Component{
     render(){
         const url = this.props.match.url;
-        console.log(this.props);
         return(
             <div>
                 <Nav pathname={this.props.location.pathname}/>
