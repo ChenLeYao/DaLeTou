@@ -40,31 +40,39 @@ const navDate = [
         icon_on : index_font_6_on
     }
 ];
-// function Nav( props ) {
-//         return (
-//             <div className="dish">
-//                 {   navDate.map( ( item , index ) =>
-//                         <Link key={ index + item.path } className={ props.match.path == item.path ?  'active' :  '' } to={ item.path } >
-//                             <img src={ props.match.path == item.path ? item.icon_on :  item.icon }/>
-//                             <span>{ item.title }</span>
-//                         </Link> )
-//                 }
-//             </div>
-//      )
-// }
+class Nav extends Component {
+    constructor( props ){
+        super(props);
+       console.log('初始化');
+    }
+    changeActive( path , itemPath ,index  ){
+        if ( path == '/home' && index == 0 ){
+            return 'active'
+        }else{
+            return  path == itemPath ? 'active' : '' ;
+        }
+    }
+    render( ) {
+        console.log(this.props);
+        const path = this.props.pathname;
+        return (
+            <div className="dish">
+                {   navDate.map( ( item , index ) =>{
+                    console.log(index);
+                    let active =  this.changeActive( path , item.path , index  );
+                    return (
+                        <Link key={ index + item.path   }  className={ active } to={ item.path } >
+                            <img src={ active ? item.icon_on :item.icon  }/>
+                            <span>{ item.title }</span>
+                        </Link> )
 
-function Nav( props ) {
-    return (
-        <div className="dish">
-            {   navDate.map( ( item , index ) =>
-                <Link key={ index + item.path   } to={ item.path } >
-                    <img src={ item.icon_on  }/>
-                    <span>{ item.title }</span>
-                </Link> )
-            }
-        </div>
-    )
+                 } )
+                }
+            </div>
+        )
+    }
 }
+
 
 export default Nav;
 

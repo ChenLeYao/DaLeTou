@@ -1,7 +1,6 @@
 import React , { Component } from 'react';
 import data from './data.js';
 import { NavInIt , countDown  } from '../../js/plugin-all.js';
-import Nav from '../nav/nav.js';
 import ic1 from '../../image/icon/ic-1.png';
 import ic2 from '../../image/icon/ic-2.png';
 import ic3 from '../../image/icon/ic-3.png';
@@ -21,7 +20,6 @@ class Hall extends Component {
     render(){
         return (  <div>
                     <HallClass/>
-                    <Nav match={ this.props.match}/>
                  </div> )
     }
 }

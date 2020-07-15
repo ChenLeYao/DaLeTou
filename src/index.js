@@ -1,5 +1,5 @@
 import ReactDom from  "react-dom";
-import { RouteMain  ,  RouteIndex , Redirect  } from './router/router.js';
+import {  RouteIndex } from './router/router.js';
 import './css/public.css';
 import './css/swiper.scss';
 import './css/mobileSelect.css';
