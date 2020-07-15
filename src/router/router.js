@@ -1,4 +1,4 @@
-import { Route , Switch , Redirect } from 'react-router-dom';
+import { Route , Switch , Redirect  } from 'react-router-dom';
 import React , { Component } from 'react';
 import Hall from '../view/hall/hall.js'
 import Index from '../view/index/index.js'
@@ -14,37 +14,67 @@ import Recharge from '../view/recharge/recharge.js'
 import ReportForm from '../view/reportform/reportform.js'
 import Discount from '../view/discount/discount.js'
 import Share from '../view/share/share.js'
-export class RouteIndex extends Component {
+import  Nav from '../view/nav/nav.js';
+
+class Home extends Component{
     render(){
+       // console.log(this.props);
+        const url = this.props.match.url;
+        console.log(url);
+        console.log(this.props.location.pathname);
         return(
             <div>
                 <Switch>
-                    <Route path="/"  exact render={()=><Redirect to='/index'/>}/>
-                    <Route path="/index"  component={Index} />
-                    <Route path="/hall" exact component={Hall} />
-                    <Route path="/user" exact component={User} />
-                    <Route path="/share" exact component={Share} />
-                    <Route path="/turntable" exact component={TurnTable}/>
+                    <Route path="/"  exact component={Index} />
+                    <Route path={ `${url}/index`} exact component={Index} />
+                    <Route path={ `${url}/hall`}  exact component={Hall} />
+                    <Route path={ `${url}/user`} exact component={User} />
+                    <Route path={ `${url}/share`}    exact component={Share} />
+                    <Route path={ `${url}/turntable`}   exact component={TurnTable}/>
                 </Switch>
-            </div>
-
+                <Nav/>
+              </div>
+            )
+    }
+}
+export class RouteIndex extends Component {
+    render(){
+        return(
+               <div>
+                   <Switch>
+                       <Route path="/"   exact component={ Home }/>
+                       <Route path="/home"   component={ Home }/>
+                       <Route path={`/account`}  exact component={Account}/>
+                       <Route path={`/discount`}   exact component={Discount}/>
+                       <Route path={`/accountstate`}   component={AccountState} />
+                       <Route path={`/backwater`}  exact component={BackWater} />
+                       <Route path={`/backwater28`}  exact component={BackWater28} />
+                       <Route path={`/history`}  exact component={History}/>
+                       <Route path={`/prefer`}  exact component={Prefer} />
+                       <Route path={`/recharge`}  exact component={Recharge}/>
+                       <Route path={`/reportform`}  exact component={ReportForm}/>
+                   </Switch>
+               </div>
         )
     }
 }
 
 export class RouteMain extends Component {
+    constructor( props ){
+        super( props );
+    }
     render(){
         return(
             <Switch>
-                <Route path="/account"  exact component={Account}/>
-                <Route path="/discount"  exact component={Discount}/>
-                <Route path="/accountstate"  component={AccountState} />
-                <Route path="/backwater" exact component={BackWater} />
-                <Route path="/backwater28" exact component={BackWater28} />
-                <Route path="/history" exact component={History}/>
-                <Route path="/prefer" exact component={Prefer} />
-                <Route path="/recharge" exact component={Recharge}/>
-                <Route path="/reportform" exact component={ReportForm}/>
+                <Route path={`/account`}  exact component={Account}/>
+                <Route path={`/discount`}   exact component={Discount}/>
+                <Route path={`/accountstate`}   component={AccountState} />
+                <Route path={`/backwater`}  exact component={BackWater} />
+                <Route path={`/backwater28`}  exact component={BackWater28} />
+                <Route path={`/history`}  exact component={History}/>
+                <Route path={`/prefer`}  exact component={Prefer} />
+                <Route path={`/recharge`}  exact component={Recharge}/>
+                <Route path={`/reportform`}  exact component={ReportForm}/>
             </Switch>
         )
     }

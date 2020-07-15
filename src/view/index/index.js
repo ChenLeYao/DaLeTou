@@ -13,7 +13,7 @@ import nav_4 from '../../image/icon/nav_4.png';
 import nav_5 from '../../image/icon/nav_5.png';
 import heart1 from '../../image/icon/red-heart1.png';
 import heart from '../../image/icon/red-heart.png';
-
+console.log(nav_1);
 class Index extends Component {
     render(){
         return (
@@ -21,7 +21,7 @@ class Index extends Component {
                 <SwiperTab/>
                 <Server/>
                 <LotteryClass/>
-                <Nav match={ this.props.match}/>
+
             </div>
         )
     }
