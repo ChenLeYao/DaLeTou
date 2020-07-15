@@ -22,6 +22,7 @@ class Home extends Component{
         console.log(this.props);
         return(
             <div>
+                <Nav pathname={this.props.location.pathname}/>
                 <Switch>
                     <Route path="/home"  exact component={Index} />
                     <Route path={ `${url}/index`} exact component={Index} />
@@ -30,7 +31,6 @@ class Home extends Component{
                     <Route path={ `${url}/share`}    exact component={Share} />
                     <Route path={ `${url}/turntable`}   exact component={TurnTable}/>
                 </Switch>
-                <Nav pathname={this.props.location.pathname}/>
               </div>
             )
     }
