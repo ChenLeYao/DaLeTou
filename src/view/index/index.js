@@ -21,7 +21,6 @@ class Index extends Component {
                 <SwiperTab/>
                 <Server/>
                 <LotteryClass/>
-
             </div>
         )
     }
@@ -98,6 +97,7 @@ class LotteryClass extends Component {
                 <ul className="dish_hall_class">
                     {  this.state.tab_class.map( (item , index)=>
                      <li  key={index} onClick={()=> this.changeActive( index )  }>
+
                          <span className={  this.state.isActive == index ? 'active' : '' } >{ item.name }</span>
                      </li>) }
                 </ul>
@@ -140,7 +140,8 @@ class LotteryClassList extends Component {
                             }else{
                                 display = 'flex';
                             }
-                            return (<div  key={index}  className="dish_hall_item"  style={{ display : display }} key={ index }>
+                            return (<Link   to="/betting"  key={index}  className="dish_hall_item"  style={{ display : display }} key={ index }>
+
                                 <div><img src={ item.url}/></div>
                                 <div>
                                     <span className="dishheader">{ item.name }</span>
@@ -152,7 +153,7 @@ class LotteryClassList extends Component {
 						            </span>
                                     </p>
                                 </div>
-                            </div>) } )
+                            </Link>) } )
                     }
                 </div>
             </div>

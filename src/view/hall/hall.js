@@ -1,9 +1,7 @@
 import React , { Component } from 'react';
 import data from './data.js';
 import { NavInIt , countDown  } from '../../js/plugin-all.js';
-import ic1 from '../../image/icon/ic-1.png';
-import ic2 from '../../image/icon/ic-2.png';
-import ic3 from '../../image/icon/ic-3.png';
+
 let period_color = {
     '0': { color : '#ffffff', background :'#3ba326'} ,
     '1': { color : '#ffffff', background :'yellow'} ,
@@ -82,26 +80,26 @@ class HallClass extends  Component {
                                 <ul   key={index + index.toString() }  className="hall_content_item">
                                     { item.content.map( ( content , index ) =>{
                                                 return <li className="hall_con" key={ index + content.path }>
-                                                <div>
-                                                    <div className="hall_con_child">
-                                                        <div><img src={ content.path }/> </div>
                                                         <div>
-                                                            <h3>{ content.title }</h3>
-                                                            <p> 距离第{ content.period }期截止还有<span>{ content.remain_time }</span></p>
+                                                            <div className="hall_con_child">
+                                                                <div><img src={ content.path }/> </div>
+                                                                <div>
+                                                                    <h3>{ content.title }</h3>
+                                                                    <p> 距离第{ content.period }期截止还有<span>{ content.remain_time }</span></p>
+                                                                </div>
+                                                            </div>
+                                                            <ul className="hall_number">
+                                                                {   content.number.toString().split('').map( ( number , index ) =>
+                                                                    <li key={ index + '_' + number  } style={ { color : period_color[number].color , background : period_color[number].background }}>{ number }</li>
+                                                                )}
+                                                            </ul>
+                                                            <div className='hall_tab'>
+                                                                <div><span className={ `ic ic1`}></span><a>开奖结果</a></div>
+                                                            <div><span className={ `ic ic2`}></span><a>玩法走势</a></div>
+                                                            <div><span className={ `ic ic3`}></span><a>基本说明</a></div>
                                                         </div>
                                                     </div>
-                                                    <ul className="hall_number">
-                                                        {   content.number.toString().split('').map( ( number , index ) =>
-                                                                <li key={ index + '_' + number  } style={ { color : period_color[number].color , background : period_color[number].background }}>{ number }</li>
-                                                        )}
-                                                    </ul>
-                                                    <div className='hall_tab'>
-                                                        <div><img src={ ic1 }/><a>开奖结果</a></div>
-                                                        <div><img src={ ic2 }/><a>玩法走势</a></div>
-                                                        <div><img src={ ic3 }/><a>基本说明</a></div>
-                                                    </div>
-                                                </div>
-                                            </li> })  }
+                                                    </li> })  }
                                  </ul> ) }
                     </div>
                 </div>

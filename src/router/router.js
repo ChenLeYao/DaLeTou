@@ -15,6 +15,7 @@ import ReportForm from '../view/reportform/reportform.js'
 import Discount from '../view/discount/discount.js'
 import Share from '../view/share/share.js'
 import  Nav from '../view/nav/nav.js';
+import Betting from '../view/betting/betting.js'
 
 class Home extends Component{
     render(){
@@ -51,6 +52,7 @@ export class RouteIndex extends Component {
                        <Route path={`/prefer`}  exact component={Prefer} />
                        <Route path={`/recharge`}  exact component={Recharge}/>
                        <Route path={`/reportform`}  exact component={ReportForm}/>
+                       <Route path={`/betting`}  exact component={Betting}/>
                    </Switch>
                </div>
         )

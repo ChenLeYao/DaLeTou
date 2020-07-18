@@ -37,7 +37,7 @@ class UserFun extends Component {
                 { data.map( ( item , index ) =>
                     <ul> {
                             item.map( fn =>
-                                <li key={ index + fn.name }><Link to={ fn.path}><img src={ fn.icon }/>{ fn.name }<span></span></Link></li> )
+                                <li key={ index + fn.name }><Link to={ fn.path}><span className={`user ${fn.icon}`}></span>{ fn.name }<span></span></Link></li> )
                          }
                     </ul>
                  )}

@@ -6,7 +6,6 @@ module.exports = {
         load : './src/public.js',
         main : './src/index.js'
     },
-
     mode : 'development',
     output : {
         path : path.resolve(__dirname , 'build'),
@@ -19,6 +18,7 @@ module.exports = {
         index : 'index.html',
         port : 3300,
         compress : true ,
+        host:'0.0.0.0',
         allowedHosts : [],
         before : function (app) {
             // console.log(app);
