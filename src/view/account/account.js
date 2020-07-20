@@ -18,6 +18,21 @@ class Account extends Component{
                             <p>2019-10-10 11:10:01</p>
                             <span className="number">+100.00</span>
                         </li>
+                        <li>
+                            <p>微信充值</p>
+                            <p>2019-10-10 11:10:01</p>
+                            <span className="number">+100.00</span>
+                        </li>
+                        <li>
+                            <p>微信充值</p>
+                            <p>2019-10-10 11:10:01</p>
+                            <span className="number">+100.00</span>
+                        </li>
+                        <li>
+                            <p>微信充值</p>
+                            <p>2019-10-10 11:10:01</p>
+                            <span className="number">+100.00</span>
+                        </li>
                     </ul>
                 </div>
             </div>

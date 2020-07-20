@@ -2,18 +2,13 @@ import  { Swiper , SwiperSlide  }  from 'swiper/react';
 import { Link } from 'react-router-dom';
 import data from './data.js';
 import { countDown } from '../../js/plugin-all.js';
-import Nav from '../nav/nav.js';
+
 import banner3 from '../../image/common/banner-3.png';
 import banner4 from '../../image/common/banner-4.png';
 import banner5 from '../../image/common/banner-5.png';
-import nav_1 from '../../image/icon/nav_1.png';
-import nav_2 from '../../image/icon/nav_2.png';
-import nav_3 from '../../image/icon/nav_3.png';
-import nav_4 from '../../image/icon/nav_4.png';
-import nav_5 from '../../image/icon/nav_5.png';
 import heart1 from '../../image/icon/red-heart1.png';
 import heart from '../../image/icon/red-heart.png';
-console.log(nav_1);
+
 class Index extends Component {
     render(){
         return (
@@ -52,18 +47,18 @@ function SwiperTab() {
 
 function  Server() {
     const serverList = [
-        { name : '充值中心', url : nav_1 , path : '/recharge' },
-        { name : '消息公告', url : nav_2 , path : '/notice'},
-        { name : '优惠活动', url : nav_3 , path : '/discount'},
-        { name : '添加客服', url : nav_4 , path : '/addservice'},
-        { name : '联系客服', url : nav_5 , path : '/connectservice'}
+        { name : '充值中心', url : 'nav_1' , path : '/recharge' },
+        { name : '消息公告', url : 'nav_2' , path : '/message'},
+        { name : '优惠活动', url : 'nav_3' , path : '/discount'},
+        { name : '添加客服', url : 'nav_4' , path : '/addservice'},
+        { name : '联系客服', url : 'nav_5' , path : '/connectservice'}
     ]
     return (
         <ul className="dish_nav">
             {  serverList.map( ( item , index ) =>
                 <li key={ index }>
                     <Link to={ item.path }>
-                        <span> <img src={ item.url }/> </span>
+                <span><a className={`dish_nav_bg ${item.url}`}></a></span>
                         <span>{ item.name }</span>
                     </Link>
                 </li> )}

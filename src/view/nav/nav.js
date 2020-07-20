@@ -13,7 +13,7 @@ const navDate = [
     } ,{
         title : '分享',
         path : '/home/share' ,
-        icon : "nav_icon_3"
+        icon : "nav_icon_4"
     }
     ,{
         title : '大转盘',
@@ -23,7 +23,7 @@ const navDate = [
     {
         title : '我的',
         path : '/home/user' ,
-        icon : "nav_icon_6"
+        icon : "nav_icon_3"
     }
 ];
 class Nav extends Component {

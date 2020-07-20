@@ -16,7 +16,12 @@ import Discount from '../view/discount/discount.js'
 import Share from '../view/share/share.js'
 import  Nav from '../view/nav/nav.js';
 import Betting from '../view/betting/betting.js'
-
+import Message from '../view/message/message.js'
+import MessageDetail from '../view/message/messagedetail.js'
+import Setting from '../view/setting/setting.js'
+import Password from '../view/setting/password.js'
+import BindAccount from "../view/account/bindaccount";
+import Cash from "../view/account/cash";
 class Home extends Component{
     render(){
         const url = this.props.match.url;
@@ -30,6 +35,7 @@ class Home extends Component{
                     <Route path={ `${url}/user`} exact component={User} />
                     <Route path={ `${url}/share`}    exact component={Share} />
                     <Route path={ `${url}/turntable`}   exact component={TurnTable}/>
+
                 </Switch>
               </div>
             )
@@ -53,6 +59,13 @@ export class RouteIndex extends Component {
                        <Route path={`/recharge`}  exact component={Recharge}/>
                        <Route path={`/reportform`}  exact component={ReportForm}/>
                        <Route path={`/betting`}  exact component={Betting}/>
+                       <Route path={`/message`}  exact component={Message}/>
+                       <Route path={`/messagedetail`}  exact component={MessageDetail}/>
+                       <Route path={`/setting`}  exact component={Setting}/>
+                       <Route path={ `/password`}   exact component={Password}/>
+                       <Route path={ `/help`}   exact component={Prefer}/>
+                       <Route path={ `/bindaccount`}   exact component={BindAccount}/>
+                       <Route path={ `/cash`}   exact component={Cash}/>
                    </Switch>
                </div>
         )

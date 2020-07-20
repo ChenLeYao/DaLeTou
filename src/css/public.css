@@ -1,7 +1,9 @@
 html {
 	font-family: sans-serif;
 	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%
+	-webkit-text-size-adjust: 100%;
+	height: 100%;
+	background: #fff;
 }
 body {
 	margin: 0;
@@ -299,7 +301,30 @@ th {
 	padding: 15px 0;
 	margin: 0;
 }
-
+.dish_nav_bg {
+	width: 0.41rem;
+	height: 0.4rem;
+	display: block;
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+.dish_nav_bg.nav_1{
+	background-image: url("../image/icon/nav_1.png");
+}
+.dish_nav_bg.nav_2{
+	background-image: url("../image/icon/nav_2.png");
+}
+.dish_nav_bg.nav_3{
+	background-image: url("../image/icon/nav_3.png");
+}
+.dish_nav_bg.nav_4{
+	background-image: url("../image/icon/nav_4.png");
+}
+.dish_nav_bg.nav_5{
+	background-image: url("../image/icon/nav_5.png");
+}
 .dish_nav li {
 	width: 25%;
 	align-items: center;
@@ -1846,15 +1871,36 @@ th {
 	height: 0.6rem;
 }
 
+.circular {
+    opacity : 0.8;
+	position :fixed;
+	top:0;
+	left : 0;
+	right :0;
+	bottom: 0;
+	justify-content : center;
+	align-items: center;
+}
 .changePws {
 	background: #FFFFFF;
-	padding: 0.1rem 0.2rem;
+	padding: 0 0.2rem;
 	padding-top: 0;
 	position: relative;
 }
+.changePws .box{
+	position: absolute;
+	right: 0;
+	bottom:0;
+	width: 2rem;
+	height: 0.86rem;
+	line-height: 0.86rem;
+	text-align: center;
 
+	color: #FFFFFF;
+	background: #e44c3f;
+}
 .changePws div{
-	    border-top: 1px solid #e5e5e5!important;
+	border-top: 1px solid #e5e5e5!important;
 }
 .changePws div:nth-child(1){
 
@@ -1867,20 +1913,27 @@ th {
 
 	height: 0.8rem;
 	line-height: 0.8rem;
-    font-size: 0.27rem;
+	font-size: 0.27rem;
 }
-
+.changePws input[disabled]{background: #FFFFFF;}
+.selbank {
+	border:none;
+	height: 0.8rem;
+	width: 4rem;
+	outline: none;
+}
 .changePws input {
 	margin-left: 0.2rem;
-	width: 5rem;
+	width: 4.4rem;
+
 }
 .changePws img {
 	width: 1rem;
 	height: 1rem;
 	border-radius:100px;
-	    display: block;
-	    margin-top: 0.2rem;
-	    margin-bottom: 0.2rem;
+	display: block;
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
 }
 .pic{
 	position: absolute;
@@ -1888,12 +1941,11 @@ th {
 	top:0.4rem;
 	width: auto!important;
 	font-size: .23rem;
-    color: #999;
+	color: #999;
 }
 .changePws span {
 	width: 1.2rem;
 }
-
 .state-date {
 	padding: 0.3rem;
 	display: flex;
@@ -2659,4 +2711,7 @@ th {
 	display: inline-block;
 	background: url(../image/icon/server.png) no-repeat center;
 	background-size: 70% 70%;
+}
+.user-list li a.noleft {
+	margin-left:0;
 }
