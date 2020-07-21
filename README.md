@@ -19,6 +19,7 @@ react 开发的彩票网站，不是真实数据和接口,也不能购买彩票,
 ## 网站截图
 <img src="http://139.224.230.131:3200/image/cover1.png"/>
 <img src="http://139.224.230.131:3200/image/cover2.png"/>
+
 ### 己完成功能
 #### <input checked="checked" type="checkbox"/><label>首页</label>
 #### <input checked="checked" type="checkbox"/><label>彩票大厅</label>
