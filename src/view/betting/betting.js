@@ -4,6 +4,7 @@ import FollowBet from './followbet.js';
 import Result from './result.js';
 import  Rotate from './rotate.js'
 import SideBet from './sidebet';
+
 class Betting extends Component{
     constructor( props ){
        super( props );
@@ -55,7 +56,6 @@ class Betting extends Component{
                 <SideBet bgActive={ this.state.bgActive } active={ this.state.sidebetActive }  openActive={ this.openSidebet }/>
                 <Wager bgActive={ this.state.bgActive } active={ this.state.wagerActive }  openActive={ this.openWager }  closeActive={ this.closeActive }/>
                 <BackGround bgActive={ this.state.bgActive } closeActive={ this.closeActive }/>
-
             </div>
         )
     }

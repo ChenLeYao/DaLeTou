@@ -9,10 +9,10 @@ class User extends Component {
                 <div className="user-bg-l">
                     <div> <img src={ background }/></div>
                     <div>
-                        <a  style={ {display:'block', color:'#FFFFFF'} }>
+                        <div  style={ {display:'block', color:'#FFFFFF'} }>
                             <h3>小明</h3>
-                            <p>设置用户</p>
-                        </a>
+                            <p><Link to="/userinfo">设置用户</Link></p>
+                        </div>
                     </div>
                     <span className="server">
                     <a><img src={ nav }/></a></span>

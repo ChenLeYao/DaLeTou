@@ -16,8 +16,8 @@ const data = [
         type : '' ,
         class : '',
         url : brand_18 ,
-        start_time : '2020/7/16 11:19:00',
-        end_time : '2020/7/17 10:10:41',
+        start_time : '2020/7/22 11:19:00',
+        end_time : '2020/7/23 10:10:41',
         isCollection : false ,
         isHot : true
     },
@@ -26,8 +26,8 @@ const data = [
         type : '' ,
         class : '',
         url : brand_1 ,
-        start_time : '2020/7/16 11:19:00',
-        end_time : '2020/7/17 10:10:41',
+        start_time : '2020/7/22 11:19:00',
+        end_time : '2020/7/23 10:10:41',
         isCollection : false ,
         isHot : false
     },
@@ -56,8 +56,8 @@ const data = [
         type : '' ,
         class : '',
         url : brand_4 ,
-        start_time : '2020/7/16 11:19:00',
-        end_time : '2020/7/17 10:10:41',
+        start_time : '2020/7/22 11:19:00',
+        end_time : '2020/7/23 10:10:41',
         isCollection : true ,
         isHot : false
     },
@@ -86,8 +86,8 @@ const data = [
         type : '' ,
         class : '',
         url : brand_7,
-        start_time : '2020/7/16 11:19:00',
-        end_time : '2020/7/17 10:10:41',
+        start_time : '2020/7/22 11:19:00',
+        end_time : '2020/7/23 10:10:41',
         isCollection : false ,
         isHot : false
     },

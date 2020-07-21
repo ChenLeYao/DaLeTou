@@ -1646,7 +1646,11 @@ th {
 	text-align: center;
 	border-radius: 20px;
 }
-
+.re-con button {
+	background: transparent;
+	width: 100%;
+	border: none;
+}
 .filter {
 	background: none;
 	position: absolute;
@@ -2537,7 +2541,31 @@ th {
 .rotate-group {
 	height:0;
 	opacity: 0;
-
+}
+.rotate-group  .nav , .rotate-btn .nav {
+	width: 1rem;
+	height: 1rem;
+	display: block;
+	background-position: center;
+	background-size: 100%;
+}
+.rotate-group .nav1 {
+  background-image: url("../image/icon/bet1.png");
+}
+.rotate-group .nav2 {
+	background-image: url("../image/icon/bet2.png");
+}
+.rotate-group .nav3 {
+	background-image: url("../image/icon/bet3.png");
+}
+.rotate-group .nav4 {
+	background-image: url("../image/icon/bet4.png");
+}
+.rotate-group .nav5 {
+	background-image: url("../image/icon/bet1.png");
+}
+.rotate-btn .nav0 {
+	background-image: url("../image/icon/bet0.png");
 }
 .rotate-group.active{
 	height:auto;
@@ -2603,15 +2631,12 @@ th {
 	left: -1.7rem;
 	background: #e44c3f;
 	z-index: 99;
+	background-image: url("../image/icon/more.png");
+	background-size: 21% 26%;
+	background-position: 1.53rem center;
+	background-repeat: no-repeat;
 }
-.side-btn img {
-	position: absolute;
-	right: 0.08rem;
-	top: 0.75rem;
-	height: 0.5rem;
-	width: 0.3rem;
 
-}
 .NoteList {
 	width:75%;
 	position: fixed;

@@ -2,7 +2,7 @@ import  { Swiper , SwiperSlide  }  from 'swiper/react';
 import { Link } from 'react-router-dom';
 import data from './data.js';
 import { countDown } from '../../js/plugin-all.js';
-
+import { AlertMessage } from '../template/material';
 import banner3 from '../../image/common/banner-3.png';
 import banner4 from '../../image/common/banner-4.png';
 import banner5 from '../../image/common/banner-5.png';
@@ -10,11 +10,25 @@ import heart1 from '../../image/icon/red-heart1.png';
 import heart from '../../image/icon/red-heart.png';
 
 class Index extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            openFun : false
+        };
+        this.openFun = this.openFun.bind(this);
+    }
+     openFun(){
+        this.setState({
+            openFun : true
+        })
+    }
+
     render(){
         return (
             <div>
+                <AlertMessage active={ this.state.openFun } />
                 <SwiperTab/>
-                <Server/>
+                <Server openFun={ this.openFun }/>
                 <LotteryClass/>
             </div>
         )
@@ -45,23 +59,37 @@ function SwiperTab() {
    )
 }
 
-function  Server() {
+function  Server(props) {
     const serverList = [
         { name : '充值中心', url : 'nav_1' , path : '/recharge' },
         { name : '消息公告', url : 'nav_2' , path : '/message'},
         { name : '优惠活动', url : 'nav_3' , path : '/discount'},
-        { name : '添加客服', url : 'nav_4' , path : '/addservice'},
-        { name : '联系客服', url : 'nav_5' , path : '/connectservice'}
+        { name : '添加客服', url : 'nav_4' , path : '/addservice' , callBack : props.openFun  },
+        { name : '联系客服', url : 'nav_5' , path : '/connectservice' , callBack :  props.openFun  }
     ]
     return (
         <ul className="dish_nav">
-            {  serverList.map( ( item , index ) =>
-                <li key={ index }>
-                    <Link to={ item.path }>
-                <span><a className={`dish_nav_bg ${item.url}`}></a></span>
-                        <span>{ item.name }</span>
-                    </Link>
-                </li> )}
+            {  serverList.map( ( item , index ) =>{
+                if( item.callBack ){
+                return  <li key={ index }>
+                            <a onClick={ item.callBack } >
+                            <span>
+                            <i className={`dish_nav_bg ${item.url}`}></i>
+                            </span>
+                            <span>{ item.name }</span>
+                            </a>
+                       </li> }
+                else{
+                return   <li key={ index }>
+                            <Link to={ item.path} >
+                            <span>
+                            <i className={`dish_nav_bg ${item.url}`}></i>
+                            </span>
+                            <span>{ item.name }</span>
+                            </Link>
+                      </li> }
+            })
+            }
         </ul>
     )
 }
@@ -111,13 +139,13 @@ class LotteryClassList extends Component {
         this.state = {  data : data  }
     }
     componentDidMount() {
-         this.timer = setInterval(()=>{
-              let data = this.state.data;
-              data.map( item => item.remain_time = countDown(item.start_time , item.end_time ) );
-              this.setState({
-                  data : data
-              })
-          },1000)
+        this.timer = setInterval(()=>{
+            let data = this.state.data;
+            data.map( item => item.remain_time = countDown(item.start_time , item.end_time ) );
+            this.setState({
+                data : data
+            })
+        },1000)
     }
     componentWillUnmount() {
         clearInterval(this.timer);

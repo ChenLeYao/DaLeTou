@@ -11,7 +11,7 @@ export function countDown( start , end ) {
     let nowTime = new Date().getTime();
     let remainTime = nowTime - endTime;
     if ( remainTime >= 0  ){
-         return '本期已结束';
+         return '已封盘';
     }else if ( remainTime < 0  ){
         if ( nowTime < startTime ){
             remainTime = startTime - nowTime;

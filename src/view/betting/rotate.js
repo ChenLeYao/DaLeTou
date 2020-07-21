@@ -19,32 +19,32 @@ class Rotate extends Component {
                 <div className={`rotate-group ${active}`}>
                     <div>
                         <a>
-                            <img src="/src/image/icon/bet2.png"/>
+                           <span className="nav nav1"></span>
                                 <span>当前注单</span>
                         </a>
                     </div>
                    <div>
                     <a>
-                       <img src="/src/image/icon/bet0.png"/>
+                        <span className="nav nav2"></span>
                        <span>开奖视频</span>
                     </a>
                    </div>
                     <div>
                         <a>
-                            <img src="/src/image/icon/bet3.png"/>
+                            <span className="nav nav3"></span>
                                 <span>近期开奖</span>
                         </a>
                     </div>
                     <div>
                         <a>
-                            <img src="/src/image/icon/bet4.png"/>
+                            <span className="nav nav4"></span>
                                 <span>长龙</span>
                         </a>
                     </div>
                 </div>
                 <div className={ `rotate-btn ${active}` } onClick={ this.changeActive }>
                     <a>
-                        <img src="/src/image/icon/bet1.png"/>
+                        <span className="nav nav0"></span>
                     </a>
                 </div>
             </div>

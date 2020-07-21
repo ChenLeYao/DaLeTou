@@ -3,9 +3,7 @@ import {  RouteIndex } from './router/router.js';
 import './css/public.css';
 import './css/swiper.scss';
 import './css/mobileSelect.css';
-import { BrowserRouter as Router , Route } from 'react-router-dom';
-import Index from "./view/index";
-
+import { BrowserRouter as Router} from 'react-router-dom';
 
 class App extends Component {
     render(){

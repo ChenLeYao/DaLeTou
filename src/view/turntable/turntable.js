@@ -1,5 +1,5 @@
 import  zp from '../../image/common/zp.png';
-import Circular from '../template/circular';
+import { Material } from '../template/material';
 
 class TurnTable extends Component {
     constructor(props){
@@ -10,11 +10,14 @@ class TurnTable extends Component {
        this.circleNone();
     }
     circleNone(){
-        setTimeout(()=>{
+        this.timer =  setTimeout(()=>{
             this.setState({
                 flex : 'none'
             })
         } , 2500)
+    }
+    componentWillUnmount(){
+        clearTimeout( this.timer );
     }
     render(){
         return <div className="dish_body">
@@ -22,7 +25,7 @@ class TurnTable extends Component {
                 大转盘
             </div>
             <div>
-                <Circular second={1000}/>
+                <Material second={1000}/>
                 <img style={{ width: '100%' }} src={zp}/>
             </div>
         </div>

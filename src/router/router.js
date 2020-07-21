@@ -22,6 +22,9 @@ import Setting from '../view/setting/setting.js'
 import Password from '../view/setting/password.js'
 import BindAccount from "../view/account/bindaccount";
 import Cash from "../view/account/cash";
+import Userinfo from "../view/user/userinfo.js";
+import Trend from "../view/betting/trend.js";
+console.log(Userinfo);
 class Home extends Component{
     render(){
         const url = this.props.match.url;
@@ -35,7 +38,6 @@ class Home extends Component{
                     <Route path={ `${url}/user`} exact component={User} />
                     <Route path={ `${url}/share`}    exact component={Share} />
                     <Route path={ `${url}/turntable`}   exact component={TurnTable}/>
-
                 </Switch>
               </div>
             )
@@ -66,6 +68,8 @@ export class RouteIndex extends Component {
                        <Route path={ `/help`}   exact component={Prefer}/>
                        <Route path={ `/bindaccount`}   exact component={BindAccount}/>
                        <Route path={ `/cash`}   exact component={Cash}/>
+                       <Route path={ `/userinfo`}   exact component={ Userinfo }/>
+                       <Route path={ `/trend`}   exact component={ Trend }/>
                    </Switch>
                </div>
         )

@@ -1,7 +1,7 @@
 import React , { Component } from 'react';
 import data from './data.js';
 import { NavInIt , countDown  } from '../../js/plugin-all.js';
-
+import { Link } from 'react-router-dom';
 let period_color = {
     '0': { color : '#ffffff', background :'#3ba326'} ,
     '1': { color : '#ffffff', background :'yellow'} ,
@@ -81,6 +81,7 @@ class HallClass extends  Component {
                                     { item.content.map( ( content , index ) =>{
                                                 return <li className="hall_con" key={ index + content.path }>
                                                         <div>
+                                                            <Link to="/betting" >
                                                             <div className="hall_con_child">
                                                                 <div><img src={ content.path }/> </div>
                                                                 <div>
@@ -88,18 +89,19 @@ class HallClass extends  Component {
                                                                     <p> 距离第{ content.period }期截止还有<span>{ content.remain_time }</span></p>
                                                                 </div>
                                                             </div>
+                                                            </Link>
                                                             <ul className="hall_number">
                                                                 {   content.number.toString().split('').map( ( number , index ) =>
                                                                     <li key={ index + '_' + number  } style={ { color : period_color[number].color , background : period_color[number].background }}>{ number }</li>
                                                                 )}
                                                             </ul>
                                                             <div className='hall_tab'>
-                                                                <div><span className={ `ic ic1`}></span><a>开奖结果</a></div>
-                                                            <div><span className={ `ic ic2`}></span><a>玩法走势</a></div>
-                                                            <div><span className={ `ic ic3`}></span><a>基本说明</a></div>
+                                                                <div><span className={ `ic ic1`}></span><Link to="/trend" >开奖结果</Link></div>
+                                                            <div><span className={ `ic ic2`}></span><Link to="/trend" >玩法走势</Link></div>
+                                                            <div><span className={ `ic ic3`}></span><Link to="/trend" >基本说明</Link></div>
                                                         </div>
                                                     </div>
-                                                    </li> })  }
+                                           </li> })  }
                                  </ul> ) }
                     </div>
                 </div>
