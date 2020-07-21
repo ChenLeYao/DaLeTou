@@ -1,5 +1,5 @@
 import  { Swiper , SwiperSlide  }  from 'swiper/react';
-
+import SwiperCore, { Pagination } from 'swiper';
 import { Link } from 'react-router-dom';
 import data from './data.js';
 import { countDown } from '../../js/plugin-all.js';
@@ -9,7 +9,9 @@ import banner4 from '../../image/common/banner-4.png';
 import banner5 from '../../image/common/banner-5.png';
 import heart1 from '../../image/icon/red-heart1.png';
 import heart from '../../image/icon/red-heart.png';
+import 'swiper/components/pagination/pagination.scss';
 
+SwiperCore.use([Pagination]);
 class Index extends Component {
     constructor(props){
         super(props);
@@ -43,10 +45,11 @@ function SwiperTab() {
            <div className="dish_header">迪士尼彩乐园</div>
            <Notice/>
            <Swiper
-                   onSlideChange={() => {} }
-                   onSwiper={(swiper) => {}}
-                   direction="horizontal"
-                   autoplay="3000">
+               pagination
+               onSlideChange={() => {} }
+               onSwiper={(swiper) => {}}
+               direction="horizontal"
+               autoPlay="3000">
                <SwiperSlide >
                    <img src={ banner5 }/>
                </SwiperSlide>
@@ -56,7 +59,6 @@ function SwiperTab() {
                <SwiperSlide>
                    <img src={ banner4 }/>
                </SwiperSlide>
-               <div className="swiper-pagination"></div>
            </Swiper>
        </div>
    )

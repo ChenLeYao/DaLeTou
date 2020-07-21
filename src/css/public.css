@@ -2761,11 +2761,15 @@ th {
 	width: 100%;
 	background: #fcfdc4;
 	color: #ff00009c;
+	overflow: hidden;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active
+{
+	background:#ffe300;
+	opacity: 0.8;
 }
 .notice-bar ul {
-	/*position: absolute;*/
-	/*top:0;*/
-	/*left:0;*/
+
 	padding: 0;
 	margin: 0;
 	overflow-x: scroll;
@@ -2776,4 +2780,11 @@ th {
   float: left;
 	width: 50%;
 	margin-left: 0;
+}
+.turntable {
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-image: url("../image/common/zp.png");
+	height: 13rem;
 }

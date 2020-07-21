@@ -1,4 +1,3 @@
-import  zp from '../../image/common/zp.png';
 import { Material } from '../template/material';
 
 class TurnTable extends Component {
@@ -20,14 +19,12 @@ class TurnTable extends Component {
         clearTimeout( this.timer );
     }
     render(){
-        return <div className="dish_body">
+        return <div className="dish_body" style={{ height : "100%"}}>
             <div className="dish_header">
                 大转盘
             </div>
-            <div>
-                <Material second={1000}/>
-                <img style={{ width: '100%' }} src={zp}/>
-            </div>
+            <Material second={1000}/>
+            <div className="turntable"></div>
         </div>
     }
 }
