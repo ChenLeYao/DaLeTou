@@ -156,7 +156,7 @@ class Notice extends Component{
                 firstChild.style.marginLeft = 0;
                 marginLeft = parseInt(firstChild.style.marginLeft);
             }
-            firstChild.style.marginLeft = ( marginLeft - 1 ) + 'px';
+            firstChild.style.marginLeft = ( marginLeft - 3 ) + 'px';
         },100)
     }
     componentWillUnmount(){
@@ -167,7 +167,7 @@ class Notice extends Component{
             <div className="notice-bar">
                 <ul ref={ ( notice)=> this.notice = notice }>
                     <li>网站维护中.....部分功能暂未开放</li>
-                    <li>网站维护中.....部分功能暂未开放</li>
+                    <li>第二期彩金已自动派送至会员帐号请登入查收【天天红包雨】</li>
                 </ul>
             </div>
         )

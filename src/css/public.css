@@ -2773,12 +2773,13 @@ th {
 	padding: 0;
 	margin: 0;
 	overflow-x: scroll;
-	width: 200%;
+	overflow-y: hidden;
+	min-width: 300%;
 }
 .notice-bar ul li {
   text-align: center;
   float: left;
-	width: 50%;
+	min-width: 50%;
 	margin-left: 0;
 }
 .turntable {
