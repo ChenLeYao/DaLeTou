@@ -38,7 +38,6 @@ class Betting extends Component{
         })
     }
     closeActive (){
-        console.log(1);
         this.setState({
             bgActive : false ,
             sidebetActive : false,
@@ -46,16 +45,28 @@ class Betting extends Component{
             wagerActive : false
         })
     }
+    componentDidMount(){
+        let scrollHeight = this.betPlay.scrollHeight;
+       // this.betPlay.scrollTo(0, scrollHeight );
+       this.betPlay.scroll(0, scrollHeight );
+    }
     render(){
         return(
+            <div>
+                <BackGround bgActive={ this.state.bgActive } closeActive={ this.closeActive }/>
             <div className="dish_body">
+
+                <div style={{ position : 'fixed' , left : 0 , top : '0.9rem' ,width: '100%' }}>
+                    <Result/>
+                </div>
                 <Menu history={ this.props.history } bgActive={ this.state.bgActive } active={ this.state.menuActive }  openActive={ this.openMenu } />
-                <Result/>
-                <FollowBet />
+
+                <FollowBet betPlay={ (betPlay)=> this.betPlay =  betPlay  } />
                 <Rotate/>
                 <SideBet bgActive={ this.state.bgActive } active={ this.state.sidebetActive }  openActive={ this.openSidebet }/>
                 <Wager bgActive={ this.state.bgActive } active={ this.state.wagerActive }  openActive={ this.openWager }  closeActive={ this.closeActive }/>
-                <BackGround bgActive={ this.state.bgActive } closeActive={ this.closeActive }/>
+
+            </div>
             </div>
         )
     }

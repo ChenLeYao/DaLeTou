@@ -36,7 +36,7 @@ class Menu extends Component {
 
         const active = this.props.active && this.props.bgActive ? 'active' : '';
         return(
-            <div>
+            <div style={{ position : 'fixed' , left : 0 , top : 0 ,width: '100%' , zIndex : 2000 }}>
                 <div className="dish_header red">
                     <a className="back" onClick={ ()=>{ this.props.history.goBack()  } }></a>
                     <span className="betname">倍率房间</span>

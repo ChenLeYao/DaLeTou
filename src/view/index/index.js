@@ -1,4 +1,5 @@
 import  { Swiper , SwiperSlide  }  from 'swiper/react';
+
 import { Link } from 'react-router-dom';
 import data from './data.js';
 import { countDown } from '../../js/plugin-all.js';
@@ -27,6 +28,7 @@ class Index extends Component {
         return (
             <div>
                 <AlertMessage active={ this.state.openFun } />
+
                 <SwiperTab/>
                 <Server openFun={ this.openFun }/>
                 <LotteryClass/>
@@ -39,6 +41,7 @@ function SwiperTab() {
    return (
        <div>
            <div className="dish_header">迪士尼彩乐园</div>
+           <Notice/>
            <Swiper
                    onSlideChange={() => {} }
                    onSwiper={(swiper) => {}}
@@ -131,6 +134,43 @@ class LotteryClass extends Component {
     }
 }
 
+class Notice extends Component{
+    constructor(props){
+        super(props);
+    }
+    componentDidMount(){
+      this.scroll();
+    }
+    scroll(){
+        let firstChild = this.notice.querySelectorAll('li')[0];
+        firstChild.style.marginLeft = 0;
+        this.timer =  setInterval(()=>{
+            let marginLeft = parseInt(firstChild.style.marginLeft);
+            let offsetWidth = firstChild.offsetWidth;
+            if ( Math.abs( marginLeft ) >=  offsetWidth ){
+                this.notice.appendChild( firstChild );
+                firstChild.style.marginLeft = 0;
+                firstChild = this.notice.querySelectorAll('li')[0];
+                firstChild.style.marginLeft = 0;
+                marginLeft = parseInt(firstChild.style.marginLeft);
+            }
+            firstChild.style.marginLeft = ( marginLeft - 1 ) + 'px';
+        },100)
+    }
+    componentWillUnmount(){
+        clearInterval( this.timer);
+    }
+    render(){
+        return (
+            <div className="notice-bar">
+                <ul ref={ ( notice)=> this.notice = notice }>
+                    <li>网站维护中.....部分功能暂未开放</li>
+                    <li>网站维护中.....部分功能暂未开放</li>
+                </ul>
+            </div>
+        )
+    }
+}
 class LotteryClassList extends Component {
     constructor( props ){
         super(props);

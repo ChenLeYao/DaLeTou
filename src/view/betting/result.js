@@ -1,7 +1,7 @@
 class Result extends Component {
     render(){
         return(
-            <div>
+            <div >
                 <div className="bet-tab">
                 <div>
                     <p>距离738547期截至</p>
