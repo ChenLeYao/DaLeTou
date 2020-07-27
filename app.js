@@ -4,7 +4,10 @@ var app = express();
 var path = require('path');
 //var favicon = require('serve-favicon');
 var bodyParser = require('body-parser');
-
+var options = {
+    maxAge: 3600000 ,
+    etag :true
+};
 
 //设置使用哪个模板引擎
 //app.set('view engine' , 'ejs' );
@@ -12,7 +15,7 @@ app.set('port' , process.env.PORT || 3200 );
 app.use( bodyParser.json());
 app.use( bodyParser.urlencoded( {  limit : '50mb',extended : true }));
 //app.use( favicon(__dirname + '/static/favicon.png'));
-app.use( express.static( path.join(__dirname , 'build') ));
+app.use( express.static( path.join(__dirname , 'build')  , options ) );
 app.use('/src/image',express.static( path.join( __dirname, 'build/'),{
     dotfiles: 'allow'
 }));

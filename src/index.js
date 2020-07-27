@@ -7,7 +7,6 @@ import { BrowserRouter as Router} from 'react-router-dom';
 import img1 from './image/common/cover1.png';
 import img2 from './image/common/cover2.png';
 
-console.log(img1);
 class App extends Component {
     render(){
       return (

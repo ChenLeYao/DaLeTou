@@ -51,13 +51,13 @@ function SwiperTab() {
                direction="horizontal"
                autoPlay="3000">
                <SwiperSlide >
-                   <img src={ banner5 }/>
+                   <img src={ banner4 }/>
                </SwiperSlide>
                <SwiperSlide>
                   <img src={ banner3 }/>
                </SwiperSlide>
                <SwiperSlide>
-                   <img src={ banner4 }/>
+                   <img src={ banner5 }/>
                </SwiperSlide>
            </Swiper>
        </div>
